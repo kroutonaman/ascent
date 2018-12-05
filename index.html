@@ -1,0 +1,702 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <!-- Latest CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/mediaqueries.css">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.PNG"/>
+    <title>Ascent Shipping</title>
+    <style>
+
+    html{
+      overflow-x: hidden;
+    }
+
+@media screen and (min-width: 1900px){
+   .animate-arrow {
+    left: 7px;
+    margin: 1px 78px;
+  }    
+}
+
+@media (min-width: 1200px) and (max-width:1500px){
+  img.img-responsive{
+      height: 450px !important;
+      width: 100% !important;
+    }
+}
+
+ul li a {
+    color: #022638;
+}
+
+.asidesection{
+  background-color: #ffffff;
+  padding: 75px 10px;
+  
+}
+.asidesection1{
+  background-color: #00a0e3;
+  padding: 75px 10px;
+  
+}
+.asidesection2{
+  background-color: #022638;
+  padding: 75px 10px;
+  
+}
+.firstsection{
+   /*background:linear-gradient(0deg,rgba(2,38,56,0.8)),url(assets/Shipping-Banner12.jpg) center center;*/
+   background:linear-gradient(0deg,rgba(2,38,56,0.8),rgba(0,0,0,0.8)),url(assets/Shipping-Banner12.jpg) center center;
+  height: 600px;
+  
+}
+.firstsec-title{
+ text-align: center;
+ margin: 110px 0px;
+ color: #ffffff;
+}
+.box-title{
+      padding: 64px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+ 
+/*=============== Home-team ===============*/
+
+.home-doctors{
+ padding: 28px 6px 5px 19px;
+}
+
+.home-doctors img {
+ width: 192px;
+ height: 192px;
+  
+}
+
+.home-doctors h3{
+ position: absolute;
+    top: 45%;
+    left: 29px;
+    width: 80%;
+    text-align: center;
+    opacity: 0;
+    z-index: 1;
+    color: #ffffff;
+    padding: 7px 0px;
+}
+
+.boximg {
+  position: relative;
+  
+  margin: 2%;
+  overflow: hidden;
+}
+.boximg img {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.boximg:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.doc-item .social-lists{
+  margin-top: -2em;
+  opacity: 1;
+      font-size: 20px;
+}
+.chevron {
+ position: absolute;
+    width: 30px;
+    height: 5px;
+    color: #ffffff;
+    opacity: 0;
+    transform: scale(0.3);
+    animation: move-chevron 3s ease-out infinite;
+}
+.chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+.chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 2s infinite;
+}
+.chevron:before, .chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #ffffff;
+}
+.chevron:before {
+  left: 0;
+  transform: skewY(30deg);
+}
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+
+/*=============== //Home-team ===============*/
+
+.animate-arrow{
+      left: 10px;
+    padding: 1px 196px;
+}
+
+</style>
+
+</head>
+
+<body translate="no">
+<!-- header testing starts here -->
+ <nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="col-md-3">
+       <a class="navbar-brand" href="index.html">
+       <img src="assets/logo.png" style="height: 80px; width: 200px; margin-left: 20px;">
+       </a>
+    </div>
+
+    <div class="col-md-9">
+      <div class="col-md-12">
+      <ul id="menu" style="padding: 14px;">
+        <li>&nbsp;&nbsp;<span class="glyphicon glyphicon-earphone"></span>044 4088 0000</li>&nbsp;  &nbsp;&nbsp;
+        <li><span class="glyphicon glyphicon-inbox"></span> shipping@ascent.com </li>&nbsp;
+      </ul>
+      </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <!-- <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>      --> 
+        <span><img src="assets/collapse2.png" style="width: 30px;height: 30px;"><span>                 
+      </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="services.html">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html">International Freight Management</a></li>
+            <li><a href="projectcargoworldwide.html">Project Cargo Worldwide</a></li>
+            <li><a href="linearagency.html">Linear Agency</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="margin-right: 20px;">
+      <li id="quote" class="quote" style="background-color:#0076bf;"><a href="getaquote.html" style="color:#fff;"><span class="glyphicon glyphicon-log-in"></span> Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+<!-- header end -->
+
+<section>
+<div class="container-fluid" style="margin-bottom: -50px; margin-top:100px;">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img class="img-responsive" class="slideone" src="assets/LINER SERVICE OP2.jpg" style="width:100%; max-height: 800px;">
+      </div>
+
+      <div class="item">
+        <img class="img-responsive" class="slidetwo" src="assets/LINER OP3.jpg" alt="Chicago" style="width:100%; max-height: 800px;">
+      </div>
+    
+      <div class="item">
+        <img class="img-responsive" class="slidethree" src="assets/LINER HOME.jpg" alt="New york" style="width:100%; max-height: 800px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</section>
+
+<section  style="text-align: center;
+   margin-bottom: 103px;
+   margin-top: 50px;">
+  <div class="col-md-12">
+  
+    <div id="numberone" class="col-md-4 numberone">
+         <h2>INTERNATIONAL FREIGHT MGMT </h2>
+         <div class="animate-arrow">
+         <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+</div>
+    </div>
+
+    <div id="numbertwo" class="col-md-4 numbertwo">
+        <h2>PROJECT CARGO WORLDWIDE </h2>
+         <div class="animate-arrow">
+         <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+</div>
+    </div>
+
+    <div id="numberthree" class="col-md-4 numberthree">
+        <h2>LINER AGENCY</h2>
+         <div class="animate-arrow">
+         <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+</div>
+    </div>
+    </div>
+</section>
+
+
+
+ 
+ <section id="numberone">
+     <a href="services.html">
+        <div id="proj1" class="col-md-6 firstsection">
+        <div class="firstsec-title">
+        <h2>International Freight Management</h2> 
+        </div>
+       </div>
+     </a>
+   
+   
+    <div class="col-md-6 asidesection">
+      <div class="1stpart">
+       
+      <div class="col-md-4 doc-item  home-doctors">
+                                
+                                          <figure class="boximg">
+                                    <a href="importexport.html">
+                                        <h3 class="animate social-lists animate">Import/Export Services and Customs Brokerage  </h3>
+                                    <img  src="assets/bg.jpg" class="doc-img animate " alt="doctor-2"> 
+                                    </a>
+                            </figure>
+
+                                
+                           
+                        </div>
+                         
+      
+       <div class="col-md-4 doc-item  home-doctors">
+                                
+                                          <figure class="boximg">
+                                    <a href="importexport.html">
+                                        <h3 class="animate social-lists animate">Import/Export Services and Customs Brokerage  </h3>
+                                    <img  src="assets/bg.jpg" class="doc-img animate " alt="doctor-2"> 
+                                    </a>
+                            </figure>
+
+                                
+                           
+                        </div>
+     <div class="col-md-4 doc-item  home-doctors">
+                                
+                                          <figure class="boximg">
+                                    <a href="importexport.html">
+                                        <h3 class="animate social-lists animate">Import/Export Services and Customs Brokerage  </h3>
+                                    <img  src="assets/bg.jpg" class="doc-img animate " alt="doctor-2"> 
+                                    </a>
+                            </figure>
+
+                                
+                           
+                        </div>
+                       </div>
+ <div class="1stpart" >
+       
+       <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Transport Services</h3>
+                        
+
+                                          <figure>
+                                    <a href="Transport.html">
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                                    </a>
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+                         
+      
+       <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Export packing services  </h3>
+                        
+
+                                          <figure>
+                                    <a href="export.html">
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                                    </a>
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+     <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Cargo Insurance</h3>
+                        
+
+                                          <figure>
+                                    <a href="insurance.html">
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                                     </a>
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+                       </div>
+    
+    
+      </div>
+    
+      </section>
+       
+ <section id="numbertwo" >
+
+    
+   
+   
+    <div id="proj2" class="col-md-6 asidesection1">
+      <div class="1stpart">
+       
+       <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Special Equipments</h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+                         
+      
+       <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Break Bulk Loading on Liner service </h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+     <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Break bulk and Heavy lift</h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+                       </div>
+ 
+       
+       <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate"> RO RO Operations</h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+                         
+      
+       <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Machinery and factory relocation </h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+     <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Event Logistics</h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+                      
+    
+    
+      </div>
+     <div class="col-md-6 firstsection">
+     <div class="firstsec-title">
+      <h2>Project Cargo Worldwide</h2> 
+
+    </div>
+   </div>
+      </section>
+ <section id="numberthree" >
+
+     <div id="proj3" class="col-md-6 firstsection">
+     <div class="firstsec-title">
+      <h2>LINER AGENCY </h2> 
+
+    </div>
+   </div>
+   
+   
+    <div class="col-md-6 asidesection2">
+     
+       
+       <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Ocean Freight </h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+                         
+      
+       <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Ocean Freight </h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+     <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Ocean Freight </h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                       
+                       </div>
+ 
+       
+       <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Ocean Freight </h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+                         
+      
+       <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Ocean Freight </h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                        </div>
+     <div class="col-md-4 doc-item  home-doctors">
+                                <div class="animated fadeInUp clearfix ae-animation-fadeInUp">
+
+                                  <h3 class="animate social-lists animate">Ocean Freight </h3>
+                        
+
+                                          <figure>
+                                    <img  src="assets/bg.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                            </figure>
+
+                                
+                            </div>
+                       
+                       </div>
+    
+    
+      </div>
+    
+      </section>
+      <div style="clear: both;"></div>
+<footer id="footer" class="section footer-classic context-dark bg-image" style="background-color:#000;">
+        <div class="container"  >
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                <h3>Who We Are..?</h3>
+                <p>Ascent Global Shipping is the brainchild of an experienced team who are passionate about shipping and logistics. Flexibility and ability to bring logistics solutions both in the local market and to our world-wide clients with true value for money and on-time execution formulates our core strength. </p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4" style="padding-top:40px; ">
+              <!-- <h3>Contacts</h3> -->
+              <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-home">&nbsp; </span>ADDRESS</dt>
+                     <dd>49, Poonamalle Rd, New Colony, Achugam Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600015</dd>
+                     <dd>Chennai, Tamilnadu</dd>
+                  </dl>
+              <dl class="contact-list">
+                <dt><span class="glyphicon glyphicon-envelope">&nbsp; </span>E-MAIL</dt>
+                <dd><a href="mailto:#">shipping@ascent.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt><span class="glyphicon glyphicon-earphone">&nbsp; </span>PHONES:</dt>
+                <dd><a href="tel:#"> 044 4088 0000</a>
+                </dd>
+              </dl>
+            </div>
+             <div class="col-md-4" style="padding-top:40px; ">
+              <!-- <h3>Contacts</h3> -->
+              <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-home">&nbsp; </span>ADDRESS</dt>
+                     <dd>49, Poonamalle Rd, New Colony, Achugam Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600015</dd>
+                     <dd>Chennai, Tamilnadu</dd>
+                  </dl>
+              <dl class="contact-list">
+                <dt><span class="glyphicon glyphicon-envelope">&nbsp; </span>E-MAIL</dt>
+                <dd><a href="mailto:#">shipping@ascent.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt><span class="glyphicon glyphicon-earphone">&nbsp; </span>PHONES:</dt>
+                <dd><a href="tel:#"> 044 4088 0000</a>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+
+    <script>
+
+
+    // Crate Smooth Scrolling 
+
+    $("#numberone").on('click',function() {
+        $('html, body').animate({
+            'scrollTop' : $("#proj1").position().top  - 108
+        });
+    });
+
+    $("#numbertwo").on('click',function() {
+        $('html, body').animate({
+            'scrollTop' : $("#proj2").position().top - 108
+        });
+    });
+
+    $("#numberthree").on('click',function() {
+        $('html, body').animate({
+            'scrollTop' : $("#proj3").position().top  - 108
+        });
+    });
+    </script>
+    <!-- End Smooth Scrlling -->
+
+</body>
+
+</html>
+ 

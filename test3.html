@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+  
+      <style>
+
+      /*Footer*/
+      .context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+      /*Footer*/
+
+      /*RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul li a{
+  text-transform: uppercase;
+}
+
+.menu_items ul{
+  padding-top: 15px;
+
+}
+
+.menu_items ul{
+ font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+body,
+h1,
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  color: #fff;
+}
+
+.toggle-menu {
+  box-shadow: none;
+  background: transparent;
+  border: 0;
+}
+
+body {
+  background: #f1f1f1;
+  color: #272626;
+font-family: 'Black Han Sans', sans-serif;
+}
+
+
+/* HEADER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
+  z-index: 1000;
+  position: fixed;
+  height: 100px;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: #DD3543;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  transition: align-items .2s;
+ margin-top: -50px;
+}
+
+ul {
+  display: flex;
+  /*margin: 50px 50px 0 0;*/
+  padding: 0;
+  transition: margin .2s;
+}
+
+li:not(:last-child) {
+  margin-right: 20px;
+}
+
+li a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.toggle-menu {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  margin: 10px 10px 0 0;
+  transition: margin .2s;
+}
+
+
+/* MAIN STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+main {
+  display: block;
+  padding: 0 20px;
+}
+
+
+/* STYLES FOR THE "scroll" CLASS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.scroll {
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, .1);
+}
+
+.scroll .logo {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+.scroll nav {
+  align-items: center;
+}
+
+.scroll .logo,
+.scroll ul,
+.scroll .toggle-menu {
+  margin: 0;
+}
+
+
+/* MQ STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 1060px) {
+  header {
+    padding: 10px;
+  }
+  nav {
+    align-items: center;
+  }
+  ul {
+    display: none;
+  }
+  .logo {
+    font-size: 1.8rem;
+    margin: 10px 0 0 10px;
+  }
+  .toggle-menu {
+    display: block;
+  }
+}
+
+
+/* STYLES FOR THE COUNTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.counter {
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1px;
+  padding: 5px;
+  color: #fff;
+  background: #DD3543;
+}
+
+h1 a img{
+  height: 91px;
+  width: 225px;
+  padding-left: 20px;
+}
+
+ .nav_items li a:hover{
+   text-decoration: none;
+   background-color: rgba(0, 0, 0, 0.4);
+   border-radius: 10px;
+   /*opacity:0.4;*/
+   color:#fff;
+   font-weight: bold;
+}
+</style>
+
+
+</head>
+
+<body translate="no" >
+
+  <header>
+
+    <div class="container-fluid">
+      <ul style="float:right;">
+        <li><a href="" style="text-transform: lowercase;"><span class="glyphicon glyphicon-envelope">&nbsp;</span>contact@ascent.com</a></li>
+        <li><a href=""><span class="glyphicon glyphicon-phone-alt"> 987654321 </a></li>
+        <li><a href=""><button class="btn btn-primary">Get a Quote</button></a></li>
+        
+      </ul>
+    </div>
+  <nav>
+    <h1>
+      <a href=""><img src="assets/logo.png" class="logo"></a>
+    </h1>
+    <div class="menu_items"></div>
+    <span class="nav_items">
+    <ul style="padding-left: 150px;">
+      <li><a href="">About</a></li>
+      <li><a href="">Services </a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Services </a></li>
+      <li><a href="">Portfolio</a></li>
+    </ul></span>
+    <button class="toggle-menu" aria-label="Responsive Navigation Menu">☰</button>
+  </nav>
+</header>
+
+<main>
+  <p style="padding-top: 100px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam temporibus repellat voluptatem sit nulla commodi, maxime optio aperiam! Consequuntur necessitatibus iste amet id, nihil laboriosam voluptatem cum laudantium ab repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis,
+  enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis!</p>
+
+  </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis!</p>
+
+  </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis!</p>
+
+  </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis!</p>
+
+  </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsum blanditiis, enim beatae, ipsam tempore, ullam voluptas consequuntur laborum, dolor nobis nam velit iure. Autem veniam atque quo, sunt veritatis!</p>
+
+  
+</main>
+
+<div class="counter"></div>
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Contacts</h5>
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>798 South Park Avenue, Jaipur, Raj</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#">krouotn@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd><a href="tel:#">+91 123456789</a> <span>or</span> <a href="tel:#">+91 123456789</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+                <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>798 South Park Avenue, Jaipur, Raj</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#">krouotn@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd><a href="tel:#">+91 123456789</a> <span>or</span> <a href="tel:#">+91 123456789</a>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    
+
+  
+
+  
+
+    <script >
+//       (function() {
+
+//   'use strict';
+
+//   var m = document.querySelector("main"),
+//     h = document.querySelector("header"),
+//     c = document.querySelector(".counter"),
+//     counter = 0,
+//     hHeight;
+
+//   function setTopPadding() {
+//     hHeight = h.offsetHeight;
+//     m.style.paddingTop = hHeight + "px";
+//   }
+
+//   function onScroll() {
+
+//     window.addEventListener("scroll", _.throttle(callbackFunc, 200));
+    
+//     function callbackFunc() {
+//       c.style.visibility = "visible";
+//       c.innerHTML = counter++;
+//       var y = window.pageYOffset;
+//       if (y > 150) {
+//         h.classList.add("scroll");
+//       } else {
+//         h.classList.remove("scroll");
+//       }
+//     }
+//   }
+
+//   window.onload = function() {
+//     setTopPadding();
+//     onScroll();
+//   };
+
+//   window.onresize = function() {
+//     setTopPadding();
+//   };
+// })();
+    </script>
+
+</body>
+
+</html>
+ 

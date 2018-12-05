@@ -1,0 +1,321 @@
+/*-------header new----------*/
+
+ .nav .open>a:focus{
+  background-color:rgba(0,0,0,0.7);
+ }
+ .nav>li>a{
+  color:#000;
+ }
+
+ul#menu li {
+    display:inline;
+    color:#000;
+    font-size: 18px;
+    font-weight: 700;
+    float:right;
+}
+.dropdown-menu a{
+    font-size:16px;
+    font-weight: 600;
+}
+
+.navbar{
+ background-color: #fff;
+ color:#000;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    text-decoration: none;
+    background-color:rgba(0,0,0,0.7);
+    color: #fff;
+}
+
+@media(max-width: 768px){
+  ul#menu li{
+    display: none;
+  }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+   ul.nav.navbar-nav{
+    margin-left: 190px;
+   }
+}​
+
+/*Footer*/
+.footer-classic{
+  background:linear-gradient(0deg,rgba(2,38,56,0.8),rgba(0,0,0,0.8)),url(https://www.desktopbackground.org/p/2010/08/18/66072_111-cruise-ship-hd-wallpapers_3840x2160_h.jpg) center center;
+  background-size: cover;
+} 
+
+p{
+  text-align: justify;
+}
+
+.context-dark, .bg-gray-dark, .bg-primary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.menu_items ul{
+  padding-top: 15px;
+
+}
+
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+
+body {
+  background: #fff;
+  /*color: #272626;*/
+  font-family: 'Bitter', serif;
+}
+
+.scroll {
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, .1);
+}
+
+.scroll .logo {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+.scroll nav {
+  align-items: center;
+}
+
+.scroll .logo,
+.scroll ul,
+.scroll .toggle-menu {
+  margin: 0;
+}
+
+
+
+/*Above code for the old header*/
+.counter {
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1px;
+  padding: 5px;
+  color: #fff;
+  background: #DD3543;
+}
+
+h1 a img{
+  height: 91px;
+  width: 225px;
+  padding-left: 20px;
+}
+
+ .nav_items li a:hover{
+   text-decoration: none;
+   background-color: #022638;
+   color:#fff;
+   font-weight: bold;
+}
+
+.nav_items li a:focus{
+   background-color: rgba(0, 0, 0, 0.4);
+   border-radius: 10px;
+   color:#fff;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #022638;
+    border-color: #ffffff;
+    text-transform: uppercase;
+    
+}
+
+/*big Buttons*/
+.numberone, .numbertwo, .numberthree{
+    cursor:pointer;
+    color:#fff;
+    text-shadow: 2px 2px 2px #000000;
+    height: 130px;
+    background-color: #022638;
+}
+
+.numberthree h2{
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.numbertwo h2{
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.numberone h2{
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.numberone{
+   border-right: 5px solid #fff;
+}
+
+.numbertwo{
+  border-right: 5px solid #fff;
+}
+
+/*end big Buttons-----*/
+
+.html{
+    overflow-x: hidden;
+}
+.main_list_box h4{
+   font-weight: 700;
+   text-shadow: 0.2 0.2 0.2 #000000;
+}
+
+.pro_cargo{
+    height: 500px;
+    background:linear-gradient(0deg,rgba(2,38,56,0.8),rgba(0,0,0,0.8)),url(https://www.desktopbackground.org/p/2010/08/18/66072_111-cruise-ship-hd-wallpapers_3840x2160_h.jpg) center center;
+}
+
+.main_list_box{
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.main_list_box li{
+   height: 200px;
+   width: 200px;
+    background-image: url('../assets/Break Bulk on Liner vessel.jpg');
+   display:inline-block;
+   transition: background 1.2s;
+   transition: 1.2s;
+
+}
+
+.main_list_box li:hover{
+   height: 200px;
+   width: 200px;
+   background-image: linear-gradient(rgba(4, 4, 4, 0.4),rgba(4, 4, 4, 0.4));
+   color:#fff;
+   border:none;
+}
+
+.main_list_box li a{
+    text-decoration: none; 
+}
+
+.main_list_box li a:hover{
+    color: #fff; 
+}
+
+.main_list_box li h4{
+   margin-top: 60px;
+}
+
+.main_list_box h2{
+vertical-align:middle;
+}
+
+.box{
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+    padding-left:0;
+    padding-right:0;
+    background-color: white;
+    background:url(https://www.desktopbackground.org/p/2010/08/18/66072_111-cruise-ship-hd-wallpapers_3840x2160_h.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#icon-wrapper{
+    width:100%;
+    float:left;
+    height:300px;
+}
+
+.icons {
+    width:25%;
+    float:left;
+    position:relative;
+}
+.icons2 {
+    width:25%;
+    float:left;
+    position:relative;
+    margin-left:25%;
+}
+.icons3 {
+    width:25%;
+    float:left;
+    position:relative;
+    margin-left:50%;
+}
+
+.icons4 {
+    width:25%;
+    float:left;
+    position:relative;
+    margin-left:75%;
+}
+
+.icon-slide-container{
+    height:300px;
+    overflow:hidden;
+    text-align: left;
+    position: absolute;
+    float: left;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.slide-icon{
+  width:300px;
+  height:auto;
+  position:absolute;
+  margin-top:-300px;
+  -webkit-transition:.4s ease;
+  -moz-transition:.4s ease;
+  -ms-transition:.4s ease;
+  -o-transition:.4s ease;
+  transition:.4 ease;
+}
+    
+.slide-icon:hover{
+  position:absolute;
+  margin-top:0;
+}
+
+                  
+                                
+
+
+

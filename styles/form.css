@@ -1,0 +1,178 @@
+.agileitscontainerwthree {
+  width: 75%;
+  margin: 0 auto;
+}
+
+fieldset fieldset legend, legend.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  /*--  agileits-w3layouts --*/
+  text-align: left;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  text-align: left;
+      margin-bottom: 0px;
+    padding-bottom: 13px;
+}
+
+.row legend {
+  margin-left: 15px;
+}
+
+.submit {
+  margin-top: 25px;
+}
+
+
+
+#progress-bar-wrap {
+  min-height: 20px;
+  display: none;
+  margin-bottom: 0;
+}
+
+#progress-bar-wrap .encouragement {
+  display: none;
+}
+
+#progress-bar-wrap .close:before {
+  content: "\f0d7";
+  display: inline-block;
+  font-family: FontAwesome;
+  /*--  agileits-w3layouts --*/
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.label {
+  padding: 0px;
+  font-weight: 100;
+}
+
+.label-info {
+  background-color: #009688;
+}
+
+.form-control {
+  padding: 12px;
+    font-size: 13px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #d5d5d5;
+    border-radius: 0;
+    box-shadow: none;
+    height: inherit;
+    line-height: 0;
+}
+
+fieldset {
+  text-align: left;
+}
+
+fieldset fieldset fieldset legend {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+   
+    line-height: inherit;
+    color: #333;border: 0;
+   
+}
+button.btn-primary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  padding: 7px 30px;
+  /*--  agileits-w3layouts --*/
+  background-color: #000;
+  border-color: #FFF;
+  border-radius: 0;
+}
+
+button.btn.btn-lg.btn-primary.submit:hover {
+  background-color: #009688;
+  border-color: #009688;
+}
+
+
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.progress {
+  margin-top: 20px;
+  margin-bottom: 0;
+  /*--  agileits-w3layouts --*/
+  background-color: #333;
+}
+
+.progress-bar-info {
+  background-color: #009688;
+}
+
+::-webkit-input-placeholder {
+  color: #FFF!important;
+}
+
+::-moz-placeholder {
+  color: #FFF!important;
+}
+
+::-moz-placeholder {
+  color: #FFF!important;
+}
+
+::-ms-input-placeholder {
+  color: #FFF!important;
+}
+
+.w3lsfooteragileits {
+  margin: 50px 10px 150px;
+}
+
+.w3lsfooteragileits p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #CCC;
+}
+
+.w3lsfooteragileits p a {
+  font-family: 'Montserrat', sans-serif;
+  color: #CCC;
+}
+
+.w3lsfooteragileits p a:hover {
+  color: #FFF;
+}
+.form-title {
+    text-align: center;
+    color: #000000;
+    margin: 0 0 58px 0;
+    padding-top: 175px;
+}
+.col-md-6, .container-fluid {
+    padding-right: 9px;
+    padding-left: 9px;
+}

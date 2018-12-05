@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!-- font -->
+      <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="styles/main.css">
+      <link rel="stylesheet" type="text/css" href="styles/form.css">
+      <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+      <title>Ascent Shipping</title>
+   </head>
+   <body translate="no" >
+      <nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="col-md-3">
+       <a class="navbar-brand" href="index.html">
+       <img src="assets/logo.png" style="height: 80px; width: 200px; margin-left: 20px;">
+       </a>
+    </div>
+
+    <div class="col-md-9">
+      <div class="col-md-12">
+      <ul id="menu" style="padding: 14px;">
+        <li>&nbsp;&nbsp;<span class="glyphicon glyphicon-earphone"></span>044 4088 0000</li>&nbsp;  &nbsp;&nbsp;
+        <li><span class="glyphicon glyphicon-inbox"></span> shipping@ascent.com </li>&nbsp;
+      </ul>
+      </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <!-- <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>      --> 
+        <span><img src="assets/collapse2.png" style="width: 30px;height: 30px;"><span>                 
+      </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html">International Freight Management</a></li>
+            <li><a href="projectcargoworldwide.html">Project Cargo Worldwide</a></li>
+            <li><a href="linearagency.html">Linear Agency</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="margin-right: 20px;">
+      <li id="quote" class="quote" style="background-color:#0076bf;"><a href="getaquote.html" style="color:#fff;"><span class="glyphicon glyphicon-log-in"></span> Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+      <section>
+         <div class="agileitscontainerwthree">
+            <form id="test_form" action="#" method="post">
+               <h2 class="form-title" >GET A QUOTE</h2>
+               <fieldset>
+                  <div class="section agileinfo row">
+                     <fieldset>
+                        <div class="form-group wthree col-md-6">
+                           <label class="control-label" for="first-name-1">Where do you want to ship from?
+                           </label>
+                              <input class="form-control" id="first-name-1" name="pt_first" value="" type="text" maxlength="50" required>
+                        </div>
+                        <!-- <div class="form-group w3-agile col-md-4">
+                           <label class="control-label" for="initial-1">Middle Initial <span class="label label-info">Optional</span></label>
+                           <input class="form-control" id="initial-1" name="pt_initial" value="" type="text" maxlength="50">
+                           </div> -->
+                        <div class="form-group getaquote col-md-6">
+                           <label class="control-label" for="last-name-1">Where do you want to ship to?</label>
+                             <input class="form-control" id="first-name-1" name="pt_first" value="" type="text" maxlength="50" required>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <div class="section agileinfo row">
+                     <fieldset>
+                        <div class="form-group wthree col-md-6">
+                           <label class="control-label" for="first-name-1">Shipper</label>
+                           <input class="form-control" id="first-name-1" name="pt_first" value="" type="text" maxlength="50" required>
+                        </div>
+                        <div class="form-group w3-agile col-md-6">
+                           <label class="control-label" for="initial-1">Forwarder</label>
+                           <input class="form-control" id="initial-1" name="pt_initial" value="" type="text" maxlength="50" required>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <div class="section agileinfo row">
+                     <fieldset>
+                        <div class="form-group wthree col-md-8">
+                           <label class="control-label" for="last-name-1">Shipment Date</label>
+                           <input class="form-control" id="first-name-1" name="pt_first" value="" type="date" maxlength="50" required>
+                        </div>
+                        <div class="form-group w3layouts col-md-4">
+                           <label for="yes" class="radio-inline">
+                           <input type="radio" id="yes" name="testRadio" required>Shipment date/period not defined
+                           </label>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <div class="section w3-agileits">
+                     <fieldset>
+                        <legend>Address</legend>
+                        <div class="form-group">
+                           <label class="control-label" for="street-address">Street Address <span class="label label-info">Optional</span></label>
+                           <input class="form-control" id="street-address" name="pt_address" value="" type="text" maxlength="200">
+                        </div>
+                        <div class="form-group">
+                           <label class="control-label" for="city">City <span class="label label-info">Optional</span></label>
+                           <input class="form-control" id="city" name="pt_city" value="" type="text" maxlength="50">
+                        </div>
+                        <div class="row">
+                           <div class="form-group col-md-4">
+                              <label class="control-label w3-agileits" for="state">State/Province</label>
+                              <select class="form-control" id="state" name="pt_state" required>
+                                 <option value="" selected="selected">Please select a state</option>
+                                 <option value="AL">Alabama</option>
+                                 <option value="AK">Alaska</option>
+                                 <option value="AB">Alberta</option>
+                                 <option value="AS">American Samoa</option>
+                                 <option value="AZ">Arizona</option>
+                                 <option value="AR">Arkansas</option>
+                                 <option value="BC">British Columbia</option>
+                                 <option value="CA">California</option>
+                                 <option value="CO">Colorado</option>
+                                 <option value="CT">Connecticut</option>
+                              </select>
+                           </div>
+                           <div class="form-group col-md-4">
+                              <label class="control-label" for="zip">Zip/Postal Code</label>
+                              <input class="form-control" id="zip" name="pt_zip" value="" type="text" maxlength="10" required />
+                           </div>
+                           <div class="form-group col-md-4">
+                              <label class="control-label" for="country">Country</label>
+                              <select class="form-control" id="country" name="pt_country" required>
+                                 <option selected="selected" value="">Please select a country</option>
+                                 <option value="United States">United States</option>
+                                 <option value="Afghanistan">Afghanistan</option>
+                                 <option value="Albania">Albania</option>
+                                 <option value="Algeria">Algeria</option>
+                                 <option value="Andorra">Andorra</option>
+                                 <option value="Angola">Angola</option>
+                                 <option value="Anguilla">Anguilla</option>
+                                 <option value="Antarctica">Antarctica</option>
+                                 <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                 <option value="Argentina">Argentina</option>
+                              </select>
+                           </div>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <div class="section">
+                     <fieldset>
+                        <legend>Contact</legend>
+                        <div class="row">
+                           <div class="form-group agileits-getaquote col-md-6">
+                              <label class="control-label" for="phone">Preferred Phone</label>
+                              <input class="form-control" id="phone" name="pt_phone" value="" type="tel" maxlength="25" required />
+                           </div>
+                           <div class="form-group agileits-getaquote col-md-6">
+                              <label class="control-label" for="phone-type">Phone Type</label>
+                              <select class="form-control" id="phone-type" name="pt_phone_type" required>
+                                 <option selected="selected" value="">Please select one</option>
+                                 <option value="Cell">Cell</option>
+                                 <option value="Home">Home</option>
+                                 <option value="Work">Work</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="form-group col-md-6">
+                              <label class="control-label" for="email">Email</label>
+                              <input class="form-control agileits-getaquote" id="email" name="userEmail" value="" type="email" maxlength="50" required>
+                           </div>
+                           <div class="form-group col-md-6">
+                              <label class="control-label" for="conf-email">Re-type Email</label>
+                              <input class="form-control" id="conf-email" name="conf_email" value="" type="email" maxlength="50" required>
+                           </div>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <div class="section">
+                     <fieldset>
+                        <legend>Radios</legend>
+                        <fieldset>
+                           <legend>Are you human?</legend>
+                           <label for="yes" class="radio-inline">
+                           <input type="radio" id="yes" name="testRadio" required> Yes
+                           </label>
+                           <label for="no" class="radio-inline wthree">
+                           <input type="radio" id="no" name="testRadio"> No
+                           </label>
+                        </fieldset>
+                     </fieldset>
+                  </div>
+               </fieldset>
+               <div class="form-group w3-agile">
+                  <button type="submit" value="Submit" class="btn btn-lg agile btn-primary submit">Submit</button>
+               </div>
+            </form>
+         </div>
+      </section>
+      <footer class="section footer-classic context-dark bg-image" style="background-color:#000;">
+         <div class="container" >
+            <div class="row row-30">
+               <div class="col-md-4 col-xl-5">
+                  <div class="pr-xl-4">
+                     <a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                     <h3>Who We Are..?</h3>
+                     <p>Ascent Global Shipping is the brainchild of an experienced team who are passionate about shipping and logistics. Flexibility and ability to bring logistics solutions both in the local market and to our world-wide clients with true value for money and on-time execution formulates our core strength. </p>
+                     <!-- Rights-->
+                     <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                  </div>
+               </div>
+               <div class="col-md-4" style="padding-top:40px; ">
+                  <!-- <h3>Contacts</h3> -->
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-home">&nbsp; </span>ADDRESS</dt>
+                     <dd>49, Poonamalle Rd, New Colony, Achugam Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600015</dd>
+                     <dd>Chennai, Tamilnadu</dd>
+                  </dl>
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-envelope">&nbsp; </span>E-MAIL</dt>
+                     <dd><a href="mailto:#">shipping@ascent.com</a></dd>
+                  </dl>
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-earphone">&nbsp; </span>PHONES:</dt>
+                     <dd><a href="tel:#"> 044 4088 0000</a>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="col-md-4" style="padding-top:40px; ">
+                  <!-- <h3>Contacts</h3> -->
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-home">&nbsp; </span>ADDRESS</dt>
+                     <dd>49, Poonamalle Rd, New Colony, Achugam Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600015</dd>
+                     <dd>Chennai, Tamilnadu</dd>
+                  </dl>
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-envelope">&nbsp; </span>E-MAIL</dt>
+                     <dd><a href="mailto:#">shipping@ascent.com</a></dd>
+                  </dl>
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-earphone">&nbsp; </span>PHONES:</dt>
+                     <dd><a href="tel:#"> 044 4088 0000</a>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

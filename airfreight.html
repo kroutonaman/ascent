@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!-- font -->
+      <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="styles/main.css">
+      <link rel="stylesheet" type="text/css" href="styles/mediaqueries.css">
+      <link rel="shortcut icon" type="image/png" href="assets/favicon.PNG"/>
+      <title>Ascent Shipping</title>
+      <style>
+
+html{
+    overflow-x: hidden;
+  }
+
+  body{
+    font-family: 'Bitter', serif;
+
+  }
+  .ocean_freight ul{
+    display: inline-table;
+  }
+
+  .ocean_freight{
+    padding:30px 40px 30px 0;
+    font-size: 20px;
+  }
+
+  .ocean_freight h2{
+    font-weight: 700;
+    color:#022638;
+  }
+
+  .row_one{
+    background-color:#fff;
+  }
+ 
+/*SideBar Nav*/
+.sidebar {
+  margin: 50px 9px;
+  padding: 0;
+  /*width: 330px;*/
+  width:90%;
+  background-color: #f1f1f1;
+  height: 100%;
+  overflow: auto;
+  border:2px solid #022638;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  text-transform: capitalize; 
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 0px solid #000000;
+}
+
+.sidebar a.active {
+  background-color: #022638;
+  color: #fff;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color:#191919;
+  color: #fff;
+}
+
+.ocean_freight li::before{
+  content:url("assets/dot.png");
+}
+
+div.content {
+  padding: 1px 16px;
+}
+
+.inner-banner{
+  height: 400px;
+  background: rgba(255, 255, 255, 0.5) url('assets/FREIGHT MANAGEMENT HOME.jpg') no-repeat 0 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+</style>
+   </head>
+   <body translate="no" >
+      <nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="col-md-3">
+       <a class="navbar-brand" href="index.html">
+       <img src="assets/logo.png" style="height: 80px; width: 200px; margin-left: 20px;">
+       </a>
+    </div>
+
+    <div class="col-md-9">
+      <div class="col-md-12">
+      <ul id="menu" style="padding: 14px;">
+        <li>&nbsp;&nbsp;<span class="glyphicon glyphicon-earphone"></span>044 4088 0000</li>&nbsp;  &nbsp;&nbsp;
+        <li><span class="glyphicon glyphicon-inbox"></span> shipping@ascent.com </li>&nbsp;
+      </ul>
+      </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <!-- <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>      --> 
+        <span><img src="assets/collapse2.png" style="width: 30px;height: 30px;"><span>                 
+      </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html">International Freight Management</a></li>
+            <li><a href="projectcargoworldwide.html">Project Cargo Worldwide</a></li>
+            <li><a href="linearagency.html">Linear Agency</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="margin-right: 20px;">
+      <li id="quote" class="quote" style="background-color:#0076bf;"><a href="getaquote.html" style="color:#fff;"><span class="glyphicon glyphicon-log-in"></span> Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+
+      <section class="inner-banner" >
+        <div class="hero-text">
+          <h1 style="font-size:50px">Services</h1>
+        </div>
+      </section>
+
+      <div class="row row_one">
+        <div class="col-md-4 col-sm-12">
+          <div class="sidebar">
+          <a  href="services.html">Ocean Freight <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
+          <a class="active" href="airfreight.html">Air Freight <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
+          <a href="importexport.html">Import/Export Services and Customs Brokerage <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
+          <a href="transport.html">Transport Services <span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
+          <a href="export.html">Export services<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
+          <a href="insurance.html">Cargo Insurance<span class="glyphicon glyphicon-chevron-right" style="float: right;"></span></a>
+          <div class="well">
+           <a href="tel:04440880000" type="button" class="btn btn-primary btn-sm btn-block" style="text-align: left; background-color: #00a0e3;">Call: 044 4088 0000</a>
+           
+           <a href="getaquote.html" type="button" class="btn btn-primary btn-sm btn-block" style="text-align: left;background-color: #00a0e3;">Get a Quote</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="ocean_freight col-md-8 col-sm-12 content" class="">
+        <h2>Air Freight</h2>
+        <p>Through our extensive network of commercial and/or charter air carriers, we can provide the most effective and efficient routing for your air cargo, as well as direct passenger and freighter flights throughout international trade lanes. Nearly any size and type of cargo are accepted – from small parcel to large project cargo, hazardous cargo and more – and can be forwarded from any origin to any destination. </p>
+
+        <p><b>Air-freight services include:</b> </p>
+
+        <ul>
+          <li>&nbsp;&nbsp;24/7 staff availability</li>
+          <li>&nbsp;&nbsp;Emergency hand-carry services </li>
+          <li>&nbsp;&nbsp;Aircraft charters</li> 
+          <li>&nbsp;&nbsp;Door-to-door deliveries</li>
+          <li>&nbsp;&nbsp;Complete documentation preparation, including on-site notaries and chambers</li>
+          <li>&nbsp;&nbsp;Heavy-lift, over-dimensional </li> 
+          <li>&nbsp;&nbsp;Project cargo </li>
+          <li>&nbsp;&nbsp;Letter of credit services </li>
+          <li>&nbsp;&nbsp;Cargo marine insurance </li>
+          <li>&nbsp;&nbsp;Multimodal solutions, including sea/air or air/sea </li>
+          <li>&nbsp;&nbsp;Hazardous materials </li>
+          <li>&nbsp;&nbsp;Purchase order (P.O.) management </li>
+          <li>&nbsp;&nbsp;Expedited services </li>
+          <li>&nbsp;&nbsp;Web-based, in-transit visibility </li>
+        </ul>
+       
+      </div>
+    </div>
+
+      </section>
+      <footer class="section footer-classic context-dark bg-image" style="background-color:#000;">
+         <div class="container" >
+            <div class="row row-30">
+               <div class="col-md-4 col-xl-5">
+                  <div class="pr-xl-4">
+                     <a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                     <h3>Who We Are..?</h3>
+                     <p>Ascent Global Shipping is the brainchild of an experienced team who are passionate about shipping and logistics. Flexibility and ability to bring logistics solutions both in the local market and to our world-wide clients with true value for money and on-time execution formulates our core strength. </p>
+                     <!-- Rights-->
+                     <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                  </div>
+               </div>
+               <div class="col-md-4" style="padding-top:40px; ">
+                  <!-- <h3>Contacts</h3> -->
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-home">&nbsp; </span>ADDRESS</dt>
+                     <dd>49, Poonamalle Rd, New Colony, Achugam Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600015</dd>
+                     <dd>Chennai, Tamilnadu</dd>
+                  </dl>
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-envelope">&nbsp; </span>E-MAIL</dt>
+                     <dd><a href="mailto:#">shipping@ascent.com</a></dd>
+                  </dl>
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-earphone">&nbsp; </span>PHONES:</dt>
+                     <dd><a href="tel:#"> 044 4088 0000</a>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="col-md-4" style="padding-top:40px; ">
+                  <!-- <h3>Contacts</h3> -->
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-home">&nbsp; </span>ADDRESS</dt>
+                     <dd>49, Poonamalle Rd, New Colony, Achugam Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600015</dd>
+                     <dd>Chennai, Tamilnadu</dd>
+                  </dl>
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-envelope">&nbsp; </span>E-MAIL</dt>
+                     <dd><a href="mailto:#">shipping@ascent.com</a></dd>
+                  </dl>
+                  <dl class="contact-list">
+                     <dt><span class="glyphicon glyphicon-earphone">&nbsp; </span>PHONES:</dt>
+                     <dd><a href="tel:#"> 044 4088 0000</a>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+
+<style>
+
+@media screen and (max-width: 365px){
+  .sidebar{
+    margin:9px 0px;
+    width: 90%;
+  }
+ 
+  .ocean_freight {
+    margin-left: 16px;
+  }
+  div.content {
+  padding: 1px 10px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .sidebar{
+    width: 95%;
+    margin:50px 0;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .ocean_freight ul{
+    margin-left: 50px;
+  }
+  .ocean_freight h2{
+    margin-left: 20px;
+  }
+  .ocean_freight p{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .sidebar{
+    width: 100%;
+    margin:50px 0;
+  }
+  
+}
+
+@media screen and (min-width: 1900px){
+  .sidebar{
+    margin: 52px 52px;
+  }
+ 
+  div.col-md-8.col-sm-12.content.ocean_freight{
+    margin-top:30px;
+    padding-right:95px;
+  }
+
+}
+
+
+@media screen and (max-width:1500px){
+  p{
+    padding-right: 15px;
+  }
+  div.col-md-8.col-sm-12.content.ocean_freight{
+    margin-top:30px;
+  }
+
+  html{
+    overflow-x: hidden;
+  }
+}
+
+
+@media screen and (max-width:1900px){
+  p{
+    padding-right: 15px;
+  }
+  div.col-md-8.col-sm-12.content.ocean_freight{
+    margin-top:30px;
+  }
+}
+
+</style>
+</html>
